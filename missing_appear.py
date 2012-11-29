@@ -38,6 +38,8 @@ def report(cov, repo):
     for hunk, missing_appear in find_missing_appear(cov, repo):
         missing_index = map(lambda num: num - hunk.new_start + 1,
                             missing_appear)
+        print(hunk.new_file)
+        print(hunk.header)
         i = 0
         for line in hunk.data:
             line_stat = line[1]
