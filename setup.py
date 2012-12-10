@@ -21,7 +21,7 @@ setup(
     },
     license="BSD",
     keywords="git coverage",
-    url="FILL LATER",
+    url="https://github.com/nttmcl/git-covdiff",
     packages=find_packages(),
     install_requires=["coverage>=3.6b1", "pygit2>=0.17.3"],
     long_description=read('README'),
