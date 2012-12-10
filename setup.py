@@ -14,6 +14,11 @@ setup(
     author="Yusuke MURAOKA",
     author_email="yusuke@nttmcl.com",
     description="Highlight newly appearing coverage missing in latest changeset in git.",
+    entry_points={
+        'console_scripts': [
+            'git-covdiff = gitcovdiff:main',
+        ]
+    },
     license="BSD",
     keywords="git coverage",
     url="FILL LATER",
