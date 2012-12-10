@@ -22,7 +22,10 @@ def find_missing_appear(cov, repo):
     for parent in head.parents:
         diff = parent.tree.diff(head.tree)
         for hunk in diff.changes['hunks']:
-            missing = cov.analysis(os.path.join(repo.workdir, hunk.new_file))[2]
+            try:
+                missing = cov.analysis(os.path.join(repo.workdir, hunk.new_file))[2]
+            except coverage.misc.NotPython:
+                continue
             addition = collect_addition(hunk)
             missing_appear = set(missing) & set(addition)
             if missing_appear:
