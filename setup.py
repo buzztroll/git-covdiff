@@ -13,7 +13,7 @@ setup(
     version="0.0.1",
     author="Yusuke MURAOKA",
     author_email="yusuke@nttmcl.com",
-    description="Highlight newly appearing coverage missing in latest changeset in git.",
+    description="Highlight newly appeared coverage missing in latest changeset in git.",
     entry_points={
         'console_scripts': [
             'git-covdiff = gitcovdiff:main',
