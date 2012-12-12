@@ -14,6 +14,6 @@ Requirements
 ============
 
 - coverage >= 3.6b1
-- pygit2 >= 0.17.3 (and libgit2)
+- pygit2 >= 0.17.3 (and libgit2 http://libgit2.github.com/ )
 
 I don't test with earlier versions.
