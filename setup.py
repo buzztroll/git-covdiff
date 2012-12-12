@@ -24,7 +24,7 @@ setup(
     url="https://github.com/nttmcl/git-covdiff",
     packages=find_packages(),
     install_requires=["coverage>=3.6b1", "pygit2>=0.17.3"],
-    long_description=read('README'),
+    long_description=read('README.rst'),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Console",
